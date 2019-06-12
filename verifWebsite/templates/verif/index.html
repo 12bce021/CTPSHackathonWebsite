@@ -1,0 +1,78 @@
+<!doctype html>
+  <html>
+    <head>
+        <meta charset='utf-8'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'verif/style.css' %}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <title>Verif Website</title>
+    </head>
+    <body>
+        <div>
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" style="width: 2%" href="#">
+                    <img class="minilogo" src="{% static 'verif/images/Flash.png' %}" alt="My image"/>
+                </a>
+            </nav>
+        </div>
+        <div class="container-fluid">
+            <div id="first">
+                <div>
+                    <img class="logo" src="{% static 'verif/images/logo.png' %}" alt="My image"/>
+                    <div style="text-align: center;color: #e9c469;font-size: xx-large;"> FAST <span style="color: #fff; height: 10px; font-size: 50px">&amp;</span> RELIABLE</div>
+                </div>
+                <div style="text-align: center; margin-top: 50px">   
+                    <button class="circle" style="margin-right: 100px">
+                        <img class="circleImage" src="{% static 'verif/images/circle1.png' %}" />
+                    </button>
+                    <button class="circle" data-toggle="modal" data-target="#requestOnboarding">
+                        <img class="circleImage" src="{% static 'verif/images/circle2.png' %}" />
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="modal fade" id="requestOnboarding">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Onboarding Request</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+            
+                <!-- Modal body -->
+                <div class="modal-body">
+                    You are about to request a physical onboarding, we will be sending our best person to help you out with your onboarding process.
+                    Fill the below mentioned details, sit back and relax. &#x1F64C;
+                    <div class="modal-body" style="flex-wrap: wrap; display: flex;">
+                        <div class="col-md-7" style="padding: 5px">
+                            <input type="email" placeholder="Email Address" id="defaultForm-email" class="form-control validate">
+                        </div>
+                        <div class="col-md-5" style="padding: 5px">
+                                <input type="text" placeholder="Name" id="defaultForm-email" class="form-control validate">
+                            </div>
+                        <div class="col-md-12" style="padding: 5px">
+                            <input type="textarea" placeholder="Physical Address" id="defaultForm-address" class="form-control validate">
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Send</button>
+                </div>
+            
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        
+    </script>
+</html>
